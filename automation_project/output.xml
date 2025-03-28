@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-28T04:33:09.620627" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Cases" source="C:\Users\niam\automation_project\tests\test_cases.robot">
+<test id="s1-t1" name="Sign Up Test" line="21">
+<kw name="Open DemoBlaze">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:33:10.811649" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument("--incognito")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-28T04:33:10.811649" elapsed="34.230906"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-28T04:33:45.261254" elapsed="0.669100"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:33:10.811649" elapsed="35.118705"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:33:45.945958" level="INFO">Clicking element 'xpath=//a[text()='Sign up']'.</msg>
+<arg>xpath=//a[text()='Sign up']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:33:45.945958" elapsed="0.520436"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:33:48.471074" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:33:46.468382" elapsed="2.002692"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:33:48.471074" level="INFO">Typing text 'Xylo_93Tron' into text field 'id=sign-username'.</msg>
+<arg>id=sign-username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:33:48.471074" elapsed="0.604125"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:33:49.075199" level="INFO">Typing text '@Secure#Pass_879!' into text field 'id=sign-password'.</msg>
+<arg>id=sign-password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:33:49.075199" elapsed="0.646064"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:33:49.721263" level="INFO">Clicking button 'xpath=//button[text()='Sign up']'.</msg>
+<arg>xpath=//button[text()='Sign up']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:33:49.721263" elapsed="0.225930"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:33:51.947981" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:33:49.947193" elapsed="2.000788"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:33:51.947981" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-03-28T04:33:51.947981" elapsed="0.578452"/>
+</kw>
+<kw name="Close DemoBlaze">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:33:54.527007" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:33:52.526433" elapsed="2.000574"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-28T04:33:54.527007" elapsed="5.687640"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:33:52.526433" elapsed="7.688214"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:33:10.811649" elapsed="49.402998"/>
+</test>
+<test id="s1-t2" name="Login Test" line="32">
+<kw name="Open DemoBlaze">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:00.214647" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument("--incognito")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-28T04:34:00.214647" elapsed="9.405656"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-28T04:34:09.620699" elapsed="0.041211"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:34:00.214647" elapsed="9.447263"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:09.662908" level="INFO">Clicking element 'xpath=//a[text()='Log in']'.</msg>
+<arg>xpath=//a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:09.662908" elapsed="0.130322"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:34:11.794644" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:34:09.794228" elapsed="2.000416"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:11.794644" level="INFO">Typing text 'Xylo_93Tron' into text field 'id=loginusername'.</msg>
+<arg>id=loginusername</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:11.794644" elapsed="0.161269"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:11.955913" level="INFO">Typing text '@Secure#Pass_879!' into text field 'id=loginpassword'.</msg>
+<arg>id=loginpassword</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:11.955913" elapsed="0.149300"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:12.105213" level="INFO">Clicking button 'xpath=//button[text()='Log in']'.</msg>
+<arg>xpath=//button[text()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:12.105213" elapsed="0.114082"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:34:15.220702" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:34:12.220556" elapsed="3.000146"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:15.250313" level="INFO">Current page contains text 'Welcome Xylo_93Tron'.</msg>
+<arg>Welcome ${USERNAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-03-28T04:34:15.220702" elapsed="0.029611"/>
+</kw>
+<kw name="Close DemoBlaze">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:34:17.251049" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:34:15.250313" elapsed="2.000736"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-28T04:34:17.251049" elapsed="2.728225"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:34:15.250313" elapsed="4.729688"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:34:00.214647" elapsed="19.766155"/>
+</test>
+<test id="s1-t3" name="Logout Test" line="43">
+<kw name="Open DemoBlaze">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:19.980802" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument("--incognito")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-28T04:34:19.980802" elapsed="8.620380"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-28T04:34:28.601182" elapsed="0.077281"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:34:19.980802" elapsed="8.697661"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:28.682452" level="INFO">Clicking element 'xpath=//a[text()='Log in']'.</msg>
+<arg>xpath=//a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:28.682452" elapsed="0.168491"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:34:30.858084" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:34:28.854032" elapsed="2.004052"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:30.858084" level="INFO">Typing text 'Xylo_93Tron' into text field 'id=loginusername'.</msg>
+<arg>id=loginusername</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:30.858084" elapsed="0.334268"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:31.200604" level="INFO">Typing text '@Secure#Pass_879!' into text field 'id=loginpassword'.</msg>
+<arg>id=loginpassword</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:31.200604" elapsed="0.168198"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:31.368802" level="INFO">Clicking button 'xpath=//button[text()='Log in']'.</msg>
+<arg>xpath=//button[text()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:31.368802" elapsed="0.137739"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:34:34.507166" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:34:31.506541" elapsed="3.000625"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-28T04:34:34.507166" level="INFO">Clicking element 'xpath=//a[text()='Log out']'.</msg>
+<arg>xpath=//a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-28T04:34:34.507166" elapsed="0.596005"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:34:37.103796" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:34:35.103171" elapsed="2.000625"/>
+</kw>
+<kw name="Close DemoBlaze">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-28T04:34:39.104619" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-28T04:34:37.103796" elapsed="2.000823"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-28T04:34:39.104619" elapsed="4.319945"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:34:37.103796" elapsed="6.320768"/>
+</kw>
+<status status="PASS" start="2025-03-28T04:34:19.980802" elapsed="23.443762"/>
+</test>
+<status status="PASS" start="2025-03-28T04:33:09.620627" elapsed="93.803937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Cases" id="s1" pass="3" fail="0" skip="0">Test Cases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
